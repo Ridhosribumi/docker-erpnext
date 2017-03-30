@@ -46,7 +46,7 @@ e.g
     bench migrate
     bench backup
 
-####Restore database
+### Restore database
 
 Add `$PWD/` before `sites/` 
 
