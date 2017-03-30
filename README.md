@@ -1,4 +1,4 @@
-# ERPNext
+# ERPNext (Single Container)
 
 This Dockerfile build latest version of ERPNext using install.py script that fetched from [ERPNext repository](https://github.com/frappe/erpnext).
 
