@@ -7,7 +7,8 @@ ENV FRAPPE_USER=frappe \
     DEBIAN_FRONTEND=noninteractive
 RUN useradd $FRAPPE_USER && mkdir /home/$FRAPPE_USER && chown -R $FRAPPE_USER.$FRAPPE_USER /home/$FRAPPE_USER
 WORKDIR /home/$FRAPPE_USER
-RUN wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py && sed -i "s/'', ''/'$MYSQL_PASSWORD', '$ADMIN_PASSWORD'/g" install.py
+RUN wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py && sed -i "s/'', ''/'$MYSQL_PASSWORD', '$ADMIN_PASSWORD'/g" install.py && \
+    apt update && python install.py --production --user $FRAPPE_USER
 COPY wkhtmltox.sh /
 RUN bash /wkhtmltox.sh
 COPY production.conf /etc/supervisor/conf.d/
