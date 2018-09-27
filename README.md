@@ -1,12 +1,9 @@
-# ERPNext (Single Container) EXPERIMENTAL USE ONLY!
+# ERPNext (Single Container)
 
 
 ### Note
 
-Since the release of [ERPNext v9.0.7](https://github.com/frappe/erpnext/releases/tag/v9.0.7) appears to contain incompatible [lines](https://github.com/lukptr/bench-docker/commit/33682904733a5470345659b784ae2a1d925dbc39) to run inside docker container. My workaround is by commented out the incompatible lines and redirect install.py to pull only [modified bench](https://github.com/lukptr/bench-docker) from my repository and pull everything else from its original sources. I also updated the Dockerfile to compensate (hopefully) needed prerequisites. This workaround may cause yet to found unforeseen side-effects.
-
-My [modified bench](https://github.com/lukptr/bench-docker) may not be updated frequently so be sure to run `bench update` afterward to keep the bench up to date.
-
+This project for experimental use only.
 DISCLAIMER : USE AT YOUR OWN RISK!
 
 ---
