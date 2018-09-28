@@ -1,5 +1,13 @@
 # ERPNext (Single Container)
 
+
+### Note
+
+This project for experimental use only.
+DISCLAIMER : USE AT YOUR OWN RISK!
+
+---
+
 This Dockerfile build latest version of ERPNext using install.py script that fetched from [ERPNext repository](https://github.com/frappe/erpnext).
 
 
